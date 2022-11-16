@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 
+<<<<<<< HEAD
 const titleSize = {
   small: (theme) => css`
     font-size: ${theme.font.sizes.medium};
@@ -26,10 +27,10 @@ const titleCase = (uppercase) => css`
   text-transform: ${uppercase ? 'uppercase' : 'none'};
 `;
 
+=======
+>>>>>>> parent of 95f2b68 (Componente de heading)
 export const Title = styled.h1`
-  ${({ theme, colorDark, size, uppercase }) => css`
-    color: ${colorDark ? theme.colors.primaryColor : theme.colors.white};
-    ${titleSize[size](theme)};
-    ${titleCase(uppercase)};
+  ${({ theme, light }) => css`
+    color: ${light ? theme.colors.white : theme.colors.primaryColor};
   `}
 `;
